@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, CheckCircle, Code2, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
+import { X, CheckCircle, Code2, ChevronLeft, ChevronRight, Image as ImageIcon, ExternalLink } from 'lucide-react';
 import { GithubIcon } from './Icons';
 import { playSound } from '../utils/sound';
 
@@ -260,6 +260,19 @@ export default function ProjectModal({ project, onClose }) {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-4 pt-4 border-t border-white/10">
+              {project.demo && project.demo !== '#' && (
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => playSound('click')}
+                  className="flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-mono text-xs font-bold tracking-wider hover:opacity-90 transition-all shadow-[0_0_20px_rgba(16,185,129,0.4)]"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  <span>OPEN LIVE PROJECT ↗</span>
+                </a>
+              )}
+
               <a
                 href={project.github}
                 target="_blank"

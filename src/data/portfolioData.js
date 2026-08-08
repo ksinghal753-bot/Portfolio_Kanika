@@ -265,7 +265,7 @@ export const projectsData = [
       }
     ],
     github: "https://github.com/ksinghal753-bot/EasyDo",
-    demo: "#",
+    demo: "https://easy-do-ebon.vercel.app/",
     features: [
       "AI-driven task classification into Urgent, Core Work, and Scheduled buckets",
       "Streamlined daily task management UI engineered with responsive HTML and CSS",

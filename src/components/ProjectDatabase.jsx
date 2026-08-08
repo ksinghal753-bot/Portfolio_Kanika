@@ -127,7 +127,7 @@ export default function ProjectDatabase() {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex items-center gap-4">
+                <div className="flex flex-wrap items-center gap-3">
                   <button
                     onClick={() => handleOpenModal(project)}
                     onMouseEnter={() => playSound('hover')}
@@ -136,6 +136,20 @@ export default function ProjectDatabase() {
                     <span>VIEW PROJECT</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </button>
+
+                  {project.demo && project.demo !== '#' && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => playSound('click')}
+                      onMouseEnter={() => playSound('hover')}
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-500/15 border border-emerald-500/40 hover:bg-emerald-500/25 text-emerald-400 hover:text-emerald-300 font-mono text-xs font-semibold transition-all shadow-[0_0_15px_rgba(16,185,129,0.25)]"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      <span>OPEN PROJECT</span>
+                    </a>
+                  )}
 
                   <a
                     href={project.github}
