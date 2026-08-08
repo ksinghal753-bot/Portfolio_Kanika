@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="certBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E121E"/>
+      <stop offset="50%" stop-color="#080B12"/>
+      <stop offset="100%" stop-color="#040609"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="certBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="550" rx="16" fill="url(#certBg)"/>
+  
+  <!-- Outer decorative border -->
+  <rect x="25" y="25" width="750" height="500" rx="12" fill="none" stroke="url(#certBorder)" stroke-width="2" opacity="0.6"/>
+  <rect x="35" y="35" width="730" height="480" rx="8" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Official Emblem / Seal -->
+  <g transform="translate(400, 110)">
+    <circle r="40" fill="#141E30" stroke="url(#goldGrad)" stroke-width="2"/>
+    <circle r="34" fill="none" stroke="rgba(245,158,11,0.4)" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="0" y="-8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="bold" fill="#FCD34D" text-anchor="middle">DRDO</text>
+    <text x="0" y="8" font-family="'JetBrains Mono', monospace" font-size="8" fill="#93C5FD" text-anchor="middle">ADRDE</text>
+    <text x="0" y="20" font-family="'JetBrains Mono', monospace" font-size="7" fill="#6EE7B7" text-anchor="middle">AGRA</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="195" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">CERTIFICATE OF INTERNSHIP</text>
+  <text x="400" y="220" font-family="'JetBrains Mono', monospace" font-size="11" fill="#93C5FD" text-anchor="middle">DEFENCE RESEARCH &amp; DEVELOPMENT ORGANISATION (DRDO)</text>
+
+  <!-- Body -->
+  <text x="400" y="265" font-family="'Space Grotesk', sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">This is to certify that</text>
+  <text x="400" y="305" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="bold" fill="#F8FAFC" text-anchor="middle" letter-spacing="1">KANIKA SINGHAL</text>
+  <line x1="250" y1="318" x2="550" y2="318" stroke="url(#certBorder)" stroke-width="1.5"/>
+
+  <text x="400" y="348" font-family="'Space Grotesk', sans-serif" font-size="13" fill="#CBD5E1" text-anchor="middle">has successfully completed technical internship training in</text>
+  <text x="400" y="375" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="600" fill="#C084FC" text-anchor="middle">Software Development &amp; Technical Systems Engineering</text>
+  <text x="400" y="405" font-family="'Space Grotesk', sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle">at Aerial Delivery Research and Development Establishment (ADRDE), Agra</text>
+
+  <!-- Footer credentials -->
+  <g transform="translate(80, 460)">
+    <text x="0" y="0" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748B">Credential ID: DRDO-ADRDE-2024-KS</text>
+    <text x="0" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10B981">✓ VERIFIED INSTITUTIONAL RECORD</text>
+  </g>
+
+  <g transform="translate(600, 460)">
+    <line x1="0" y1="0" x2="120" y2="0" stroke="#475569" stroke-width="1"/>
+    <text x="60" y="16" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Authorized Signatory</text>
+  </g>
+</svg>

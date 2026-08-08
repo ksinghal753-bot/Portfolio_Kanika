@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-void-950: #030305;
+    --color-void-900: #07070B;
+    --color-void-800: #0C0C12;
+    --color-purple-glow: rgba(139, 92, 246, 0.4);
+    --color-blue-glow: rgba(59, 130, 246, 0.35);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #030305;
+    font-size: 15px;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      font-size: 90%; /* Proportional 90% scaling for 100% browser view */
+    }
+  }
+
+  @media (min-width: 1536px) {
+    html {
+      font-size: 93%;
+    }
+  }
+
+  body {
+    background-color: #030305;
+    color: #F5F5F7;
+    overflow-x: hidden;
+    cursor: default;
+  }
+
+  /* Custom Sleek Cyber Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #07070B;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #8B5CF6 0%, #3B82F6 100%);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #A855F7 0%, #60A5FA 100%);
+  }
+}
+
+@layer components {
+  /* High-tech Glassmorphism */
+  .glass-panel {
+    background: rgba(12, 12, 18, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(139, 92, 246, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+  }
+
+  .glass-card {
+    background: linear-gradient(135deg, rgba(14, 14, 22, 0.75) 0%, rgba(7, 7, 11, 0.85) 100%);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card:hover {
+    border-color: rgba(168, 85, 247, 0.4);
+    box-shadow: 0 12px 40px -10px rgba(139, 92, 246, 0.25), 0 0 20px -2px rgba(59, 130, 246, 0.15);
+  }
+
+  .glass-button {
+    background: rgba(139, 92, 246, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    color: #F5F5F7;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-button:hover {
+    background: rgba(139, 92, 246, 0.22);
+    border-color: rgba(168, 85, 247, 0.6);
+    box-shadow: 0 0 25px -4px rgba(139, 92, 246, 0.5);
+    transform: translateY(-2px);
+  }
+
+  /* Cyber Grid Backdrop */
+  .cyber-grid {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(139, 92, 246, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(139, 92, 246, 0.04) 1px, transparent 1px);
+  }
+
+  .cyber-dots {
+    background-image: radial-gradient(rgba(139, 92, 246, 0.12) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* Neon Text Accents */
+  .text-glow-purple {
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+  }
+
+  .text-glow-blue {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+  }
+
+  .text-gradient-cyber {
+    background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 40%, #C084FC 80%, #60A5FA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-purple {
+    background: linear-gradient(135deg, #C084FC 0%, #8B5CF6 50%, #3B82F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Subtle Scanline Overlay */
+  .scanline-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, 0.25) 50%,
+      rgba(0, 0, 0, 0.25)
+    );
+    background-size: 100% 4px;
+  }
+
+  /* Glowing Border Animation */
+  .border-glow-animated {
+    position: relative;
+  }
+  
+  .border-glow-animated::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(90deg, #8B5CF6, #3B82F6, #06B6D4, #8B5CF6);
+    background-size: 300% 300%;
+    border-radius: inherit;
+    z-index: -1;
+    animation: borderGlow 6s ease infinite;
+    opacity: 0.4;
+    filter: blur(4px);
+  }
+
+  @keyframes borderGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}

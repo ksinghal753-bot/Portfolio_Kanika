@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="projBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F0C1B"/>
+      <stop offset="100%" stop-color="#05050A"/>
+    </linearGradient>
+    <linearGradient id="pGlow1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#projBg1)"/>
+  
+  <!-- Window Header -->
+  <rect width="800" height="40" rx="16" fill="#141422"/>
+  <circle cx="25" cy="20" r="5" fill="#EF4444"/>
+  <circle cx="45" cy="20" r="5" fill="#F59E0B"/>
+  <circle cx="65" cy="20" r="5" fill="#10B981"/>
+  <text x="400" y="24" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94A3B8" text-anchor="middle">address_manager_v2.4.py — PostgreSQL DBMS</text>
+
+  <!-- Sidebar -->
+  <rect x="20" y="60" width="200" height="415" rx="8" fill="#0C0C14" stroke="rgba(139,92,246,0.2)"/>
+  <text x="35" y="90" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="bold" fill="#C084FC">DIRECTORIES</text>
+  <rect x="30" y="105" width="180" height="30" rx="6" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)"/>
+  <text x="45" y="125" font-family="'JetBrains Mono', monospace" font-size="11" fill="#E2E8F0">📁 Official Records</text>
+  <text x="45" y="160" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748B">📁 Department Logs</text>
+  <text x="45" y="195" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748B">📁 Archive Database</text>
+  <text x="45" y="230" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748B">⚙️ Admin Security</text>
+
+  <!-- Main Content Database Table -->
+  <rect x="235" y="60" width="545" height="415" rx="8" fill="#0C0C14" stroke="rgba(59,130,246,0.2)"/>
+  
+  <!-- Search Bar -->
+  <rect x="250" y="75" width="340" height="32" rx="6" fill="#141422" stroke="rgba(255,255,255,0.08)"/>
+  <text x="265" y="95" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748B">🔍 Search records by ID, Name or ZIP code...</text>
+  <rect x="600" y="75" width="80" height="32" rx="6" fill="#8B5CF6"/>
+  <text x="640" y="95" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">FILTER</text>
+  <rect x="690" y="75" width="75" height="32" rx="6" fill="#3B82F6"/>
+  <text x="727" y="95" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">+ ADD</text>
+
+  <!-- Table Header -->
+  <rect x="250" y="120" width="515" height="28" fill="#181828"/>
+  <text x="265" y="138" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#93C5FD">REC_ID</text>
+  <text x="330" y="138" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#93C5FD">OFFICIAL ENTITY</text>
+  <text x="490" y="138" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#93C5FD">LOCATION / DEPT</text>
+  <text x="660" y="138" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" fill="#93C5FD">ACCESS LEVEL</text>
+
+  <!-- Row 1 -->
+  <rect x="250" y="155" width="515" height="38" rx="4" fill="#0F0F1A"/>
+  <text x="265" y="178" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A855F7">#ADR-9041</text>
+  <text x="330" y="178" font-family="'Space Grotesk', sans-serif" font-size="12" fill="#F8FAFC">Central Defense Wing</text>
+  <text x="490" y="178" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">Agra Sector 4</text>
+  <rect x="660" y="165" width="75" height="18" rx="9" fill="rgba(16,185,129,0.2)"/>
+  <text x="697" y="178" font-family="'JetBrains Mono', monospace" font-size="9" fill="#34D399" text-anchor="middle">ADMIN</text>
+
+  <!-- Row 2 -->
+  <rect x="250" y="200" width="515" height="38" rx="4" fill="#0A0A12"/>
+  <text x="265" y="223" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A855F7">#ADR-8832</text>
+  <text x="330" y="223" font-family="'Space Grotesk', sans-serif" font-size="12" fill="#F8FAFC">Logistics Directorate</text>
+  <text x="490" y="223" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">Delhi Command HQ</text>
+  <rect x="660" y="210" width="75" height="18" rx="9" fill="rgba(59,130,246,0.2)"/>
+  <text x="697" y="223" font-family="'JetBrains Mono', monospace" font-size="9" fill="#60A5FA" text-anchor="middle">OFFICIAL</text>
+
+  <!-- Row 3 -->
+  <rect x="250" y="245" width="515" height="38" rx="4" fill="#0F0F1A"/>
+  <text x="265" y="268" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A855F7">#ADR-7710</text>
+  <text x="330" y="268" font-family="'Space Grotesk', sans-serif" font-size="12" fill="#F8FAFC">Research Cell Alpha</text>
+  <text x="490" y="268" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">Tech Park Node B</text>
+  <rect x="660" y="255" width="75" height="18" rx="9" fill="rgba(16,185,129,0.2)"/>
+  <text x="697" y="268" font-family="'JetBrains Mono', monospace" font-size="9" fill="#34D399" text-anchor="middle">ADMIN</text>
+
+  <!-- Bottom Analytics Bar -->
+  <g transform="translate(250, 310)">
+    <rect width="515" height="145" rx="8" fill="#12121E" stroke="rgba(139,92,246,0.15)"/>
+    <text x="20" y="30" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold" fill="#C084FC">DATABASE TELEMETRY &amp; STATS</text>
+    <text x="20" y="60" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">Active PostgreSQL Pool: 8 connections | Query Latency: 4.2ms | Storage: 4.8 MB</text>
+    <path d="M 20 120 L 80 90 L 140 105 L 200 70 L 260 85 L 320 50 L 380 65 L 440 40 L 495 55" fill="none" stroke="url(#pGlow1)" stroke-width="2.5"/>
+  </g>
+</svg>

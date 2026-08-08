@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="scalerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140824"/>
+      <stop offset="50%" stop-color="#0A0612"/>
+      <stop offset="100%" stop-color="#030206"/>
+    </linearGradient>
+    <linearGradient id="pythonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#FACC15"/>
+    </linearGradient>
+    <filter id="scalerGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" rx="16" fill="url(#scalerBg)" stroke="#A855F7" stroke-width="1.5" stroke-opacity="0.3"/>
+
+  <!-- Scaler Badge -->
+  <rect x="40" y="35" width="110" height="24" rx="12" fill="#8B5CF6" fill-opacity="0.15" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="95" y="51" fill="#C084FC" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="middle" letter-spacing="1">SCALER ACADEMY</text>
+
+  <!-- Python Dual Snake Icon -->
+  <g transform="translate(300, 140)" filter="url(#scalerGlow)">
+    <circle cx="0" cy="0" r="50" fill="#170D2C" stroke="#A855F7" stroke-width="2"/>
+    <path d="M-10 -25 C-20 -25 -25 -20 -25 -10 L-25 0 L0 0 L0 -5 C0 -15 5 -20 15 -20 L20 -20 C20 -25 15 -25 5 -25 Z" fill="#38BDF8"/>
+    <circle cx="-15" cy="-18" r="3" fill="#FFFFFF"/>
+    <path d="M10 25 C20 25 25 20 25 10 L25 0 L0 0 L0 5 C0 15 -5 20 -15 20 L-20 20 C-20 25 -15 25 -5 25 Z" fill="#FACC15"/>
+    <circle cx="15" cy="18" r="3" fill="#0C0C12"/>
+  </g>
+
+  <text x="300" y="225" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="22" font-weight="bold" text-anchor="middle">Python Course for Beginners</text>
+  <text x="300" y="250" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13" text-anchor="middle">Scaler • Certificate of Course Completion</text>
+  
+  <text x="300" y="295" fill="#C084FC" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle" letter-spacing="2">DATA STRUCTURES • OOP CONCEPTS • ALGORITHMIC LOGIC</text>
+
+  <!-- Footer Verification Badge -->
+  <line x1="60" y1="340" x2="540" y2="340" stroke="#2E1065" stroke-width="1"/>
+  <text x="60" y="365" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="10">RECIPIENT: KANIKA SINGHAL</text>
+  <text x="540" y="365" fill="#A855F7" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">CREDENTIAL ID: SCALER-PY-2024</text>
+</svg>

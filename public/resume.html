@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanika Singhal — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0d0f17;
+      color: #111827;
+      font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
+      font-size: 15px;
+      line-height: 1.45;
+      padding: 40px 20px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Floating Action Bar */
+    .action-bar {
+      position: sticky;
+      top: 20px;
+      z-index: 100;
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      background: rgba(18, 16, 38, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      padding: 10px 18px;
+      border-radius: 9999px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(139, 92, 246, 0.2);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(139, 92, 246, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(139, 92, 246, 0.6);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: #e2e8f0;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+    }
+
+    /* Page Container */
+    .resume-page {
+      background: #ffffff;
+      width: 100%;
+      max-width: 820px;
+      min-height: 1060px;
+      padding: 48px 56px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+      border-radius: 4px;
+      color: #1a1a1a;
+    }
+
+    /* Resume Header */
+    .resume-header {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .resume-header h1 {
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #111;
+      margin-bottom: 4px;
+    }
+
+    .contact-info {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .contact-info a {
+      color: #111;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-info .sep {
+      margin: 0 6px;
+      color: #777;
+    }
+
+    /* Section Styles */
+    .section {
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #111;
+      border-bottom: 1px solid #111;
+      padding-bottom: 2px;
+      margin-bottom: 8px;
+    }
+
+    .section-content {
+      font-size: 14.5px;
+      color: #222;
+      line-height: 1.45;
+    }
+
+    /* Item Styles */
+    .item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .item-title {
+      font-weight: 700;
+      font-size: 15px;
+      color: #111;
+    }
+
+    .item-sub {
+      font-style: italic;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .item-date, .item-location {
+      font-size: 13.5px;
+      color: #333;
+      text-align: right;
+    }
+
+    .item-date {
+      font-style: italic;
+    }
+
+    ul.bullet-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 3px;
+      margin-bottom: 8px;
+    }
+
+    ul.bullet-list li {
+      font-size: 14px;
+      color: #222;
+      margin-bottom: 3px;
+      line-height: 1.4;
+    }
+
+    .tech-skills-block {
+      margin-top: 2px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .tech-skills-block strong {
+      color: #111;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .resume-page {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 24px 32px;
+        max-width: 100%;
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Toolbar -->
+  <div class="action-bar">
+    <button class="btn btn-primary" onclick="window.print()">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+      Print / Save as PDF
+    </button>
+    <a class="btn btn-secondary" href="/">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+      Back to Portfolio
+    </a>
+  </div>
+
+  <!-- Main High-Definition Resume Page -->
+  <main class="resume-page">
+    
+    <!-- Header -->
+    <header class="resume-header">
+      <h1>Kanika Singhal</h1>
+      <div class="contact-info">
+        <span>+91 8958974114</span>
+        <span class="sep">|</span>
+        <a href="mailto:ksinghal753@gmail.com">ksinghal753@gmail.com</a>
+        <span class="sep">|</span>
+        <a href="https://www.linkedin.com/in/kanika-singhal-b2991b340/" target="_blank" rel="noopener noreferrer">linkedin.com/in/kanika-singhal-b2991b340</a>
+        <span class="sep">|</span>
+        <a href="https://github.com/ksinghal753-bot" target="_blank" rel="noopener noreferrer">github.com/ksinghal753-bot</a>
+      </div>
+    </header>
+
+    <!-- About Me -->
+    <section class="section">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-content">
+        I am motivated B.Tech Computer Science Engineering Third-year student with a good foundation in programming and problem solving. I am eager to gain hands-on experience through an internship and apply my academic knowledge to real world projects while learning in a professional environment.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      
+      <div style="margin-bottom: 8px;">
+        <div class="item-row">
+          <span class="item-title">Sharda University Agra</span>
+          <span class="item-location">Uttar Pradesh</span>
+        </div>
+        <div class="item-row">
+          <span class="item-sub">Bachelor of Technology (CSE)</span>
+          <span class="item-date">Aug. 2024 – 2028</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Current Year: Third</li>
+          <li>First Year CGPA: 9.76</li>
+          <li>Second Year CGPA: 9.69</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="item-row">
+          <span class="item-title">Holy Public Junior College</span>
+          <span class="item-location">Bodla, Agra</span>
+        </div>
+        <div class="item-row">
+          <span class="item-sub">Intermediate (Class XII)</span>
+          <span class="item-date">2023 – 2024</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <div style="margin-bottom: 8px;">
+        <div class="item-row">
+          <div>
+            <span class="item-title">Personal Portfolio Website</span>
+            <span class="item-sub"> | HTML, CSS</span>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Designed and developed a fully responsive personal portfolio website to showcase technical skills and projects.</li>
+          <li>Implemented semantic HTML5 and customized CSS styling to create an intuitive and visually appealing user interface.</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="item-row">
+          <div>
+            <span class="item-title">AI-Integrated To-Do List</span>
+            <span class="item-sub"> | HTML, CSS, AI APIs</span>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed an interactive To-Do list application to streamline daily task management and boost productivity.</li>
+          <li>Engineered the front-end using HTML and CSS, integrated with AI-driven features for smart task categorization and prioritization.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+      <h2 class="section-title">Certifications</h2>
+
+      <div style="margin-bottom: 6px;">
+        <div class="item-row">
+          <div>
+            <span class="item-title">CyberOps Associate</span>
+            <span class="item-sub"> | Cisco Networking Academy</span>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Gained foundational knowledge in cybersecurity operations, including monitoring, detecting, and responding to security incidents.</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom: 6px;">
+        <div class="item-row">
+          <div>
+            <span class="item-title">Python Course for Beginners</span>
+            <span class="item-sub"> | Scaler</span>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Mastered core Python programming concepts, data structures, and algorithmic logic through practical coding exercises.</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="item-row">
+          <div>
+            <span class="item-title">Technical Workshop Certificates</span>
+            <span class="item-sub"> | Various Organizers</span>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>Participated in intensive, hands-on workshops focused on emerging technologies, practical implementations, and industry best practices.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="tech-skills-block">
+        <p><strong>Languages:</strong> C/C++, JavaScript, HTML/CSS</p>
+        <p><strong>Developer Tools:</strong> Git, VS Code, Visual Studio</p>
+        <p>Data Structures and Algorithms, DBMS, OS</p>
+      </div>
+    </section>
+
+    <!-- Soft Skills -->
+    <section class="section">
+      <h2 class="section-title">Soft Skills</h2>
+      <ul class="bullet-list">
+        <li>Communication</li>
+        <li>Time Management</li>
+        <li>Teamwork</li>
+        <li>Problem Solving</li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+</html>
