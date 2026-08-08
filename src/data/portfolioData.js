@@ -377,7 +377,7 @@ export const projectsData = [
       }
     ],
     github: "https://github.com/ksinghal753-bot/Portfolio_Kanika",
-    demo: "#",
+    demo: "https://portfolio-kanika-five.vercel.app/",
     features: [
       "Modern cinematic developer interface with high-tech visual aesthetics",
       "Semantic HTML5 structure and customized CSS for maximum responsiveness across devices",
