@@ -376,7 +376,7 @@ export const projectsData = [
         desc: "Cinematic footer with brand statement, social links (GitHub, LinkedIn, Email), and KANIKA.SYS version tag."
       }
     ],
-    github: "https://github.com/ksinghal753-bot",
+    github: "https://github.com/ksinghal753-bot/Portfolio_Kanika",
     demo: "#",
     features: [
       "Modern cinematic developer interface with high-tech visual aesthetics",
