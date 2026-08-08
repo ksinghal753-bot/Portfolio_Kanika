@@ -81,9 +81,9 @@ export default function Preloader({ onComplete }) {
               </span>
             </div>
 
-            {/* Title: KANIKA.SYS */}
+            {/* Title: Kanika Singhal */}
             <h1 className="text-4xl sm:text-5xl font-extrabold tracking-wider text-white font-mono mb-4 text-glow-purple">
-              KANIKA<span className="text-cyber-purple">.SYS</span>
+              Kanika<span className="text-cyber-purple"> Singhal</span>
             </h1>
 
             {/* Subtitle / Status */}

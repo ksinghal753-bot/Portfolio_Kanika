@@ -14,18 +14,18 @@
   html {
     scroll-behavior: smooth;
     background-color: #030305;
-    font-size: 15px;
+    font-size: 13px;
   }
 
   @media (min-width: 1024px) {
     html {
-      font-size: 90%; /* Proportional 90% scaling for 100% browser view */
+      font-size: 13px;
     }
   }
 
   @media (min-width: 1536px) {
     html {
-      font-size: 93%;
+      font-size: 14px;
     }
   }
 
